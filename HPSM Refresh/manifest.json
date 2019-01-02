@@ -1,0 +1,25 @@
+{
+  "name": "HPSM Refresh",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Refresh HPSM queues without disrupting ticket pages",
+  "homepage_url": "http://iopmarketing.com",
+"icons": { "16": "16.png",
+           "48": "48.png",
+          "128": "128.png" }, 
+ "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "HPSM Refresh",
+	"setBadgeText": "HPSM"
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
+}
